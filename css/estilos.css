@@ -59,6 +59,7 @@ header nav a:hover {
 
 section{
 	background:#d5c75f ;
+	text-align: center;
  	display: flex;
  	flex-wrap: wrap;
 	justify-content:flex-start;
@@ -80,7 +81,6 @@ section{
 #ima2:hover{
 	transform:rotate(10deg);}
 
-
 #ima3{
 	-webkit-filter: drop-shadow(2px 2px 2px #82c3a6) ;
 	filter:drop-shadow(2px 2px 2px #82c3a6);
@@ -88,6 +88,43 @@ section{
 
 #ima3:hover{
 	transform:translate(20px, -5px)}
+
+
+#pai1{
+	width: 33.33%;
+	padding: 1%;}
+
+#pai2{
+	width: 33.33%;
+	padding: 1%;}
+
+#pai3{
+	width: 33.33%;
+	padding: 1%;}
+
+#pai4{
+	width: 33.33%;
+	padding: 1%;}	
+
+#pai5{
+	width: 33.33%;
+	padding: 1%;}
+
+#pai6{
+	width: 33.33%;
+	padding: 1%;}			
+
+.p1{
+	-webkit-filter:blur(10px);
+	filter:blur(10px);}
+
+.p2{
+	-webkit-filter:grayscale(100%);
+	filter:grayscale(100%);}
+
+.p3{
+	-webkit-filter:sepia(90%);
+	filter:sepia(90%);}
 
 footer {
 	background:#C5d5c5;
@@ -120,7 +157,6 @@ footer {
 .social ul li .icon-twitter2 {background: #00abf0;}
 .social ul li .icon-youtube {background: #d95232;}
 
-
 .social ul li a:hover {
 	background: #C5d5c5; 
 	padding: 10px 30px;}
@@ -137,17 +173,15 @@ footer {
 #colp4 {
 	width: 25%;}
 
-@media screen and  (max-width: 500px) {
+@media screen and  (max-width: 680px) {
 	#contenido{
 	width: 100%;}
 
 	section{
-		width: 100%;}
+		width: 100%;
+		flex-direction: column;}
 
-	#col2{
-		width: 100%;}
-
-	#col3{
+	#col2, 	#col3{
 		width: 100%;}
 	
 	header{
@@ -159,20 +193,14 @@ footer {
 	footer{
 		width: 100%;}
 
-	#colp1{
-		width: 100%;
-		margin-bottom: 30px;}	
-
-	#colp2{
+	#colp1, #colp2, #colp3,	#colp4{
 		width: 100%;
 		margin-bottom: 30px;}
 
-	#colp3{
-		width: 100%;
-		margin-bottom: 30px;}
+	#pai1, #pai2, #pai3, #pai4, #pai5, #pai6{
+		width: 100%;}		
 	
-	#colp4{
-		width: 100%;}
+
 }
 
 
@@ -187,5 +215,8 @@ footer {
 		width: 100%;}
 	
 	header nav {
+		width: 100%;}
+
+	footer{
 		width: 100%;}
 }
